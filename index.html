@@ -21,14 +21,24 @@
                     <i class="fa-solid fa-streering-wheel" style="color: white;" alt="streering"></i> DriveEase
                 </a>
             </div>
-            <div class="mobile-menu-button">
-                <i style="height: 20px; width: 20px; color: white;" class="fa fa-lg fa-bars"></i>
+            <div class="nav-links" id="nav-links-js">
+                <a class="nav-items">Home</a>
+                <a class="nav-items">How its works</a>
+                <a class="nav-items">About</a>
+                <a class="nav-items">Pricing</a>
+                <a class="nav-wh-btn" data-message="Hi, I need a driver. Pickup location: Date & time: Vehicle type:">
+                    <i class="fab fa-whatsapp"></i>
+                    Book Now
+                </a>
+            </div>
+            <div class="mobile-menu-button mobile-menu-button-js">
+                    <i style="width: 20px; color: white;" class="fa fa-lg fa-bars"></i>
             </div>
         </div>
     </nav>
     <!-- hero section -->
-    <section id="hero">
-        <div class="hero-section">
+    <section style="background-color: #0a0a0a;" id="hero">
+        <div class="container hero-section">
             <div class="hero-image">
                 <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80" alt="Relaxing in car while driver drives">
             </div>
@@ -36,15 +46,21 @@
                 <div class="first-ride">
                     <i class="fa-solid fa-bolt" style="color: #FFC107; margin-right: 5px;"></i> First Ride &#8377;99 Only
                 </div>
-                <h1>Hire a Driver for <span style="color: #FFC107">Your Own Vehicle</span></h1>
-                <p class="sub-text">You provide the car, We provide the professional driver to take you there. Safe, Verified, Available Anytime.</p>
-                <ul class="unorder-list">
+                <div class="hero-content-heading">
+                    <h1>Hire a Driver for <span style="color: #FFC107">Your Own Vehicle</span></h1>
+                </div>
+                <div>
+                    <p class="sub-text">You provide the car, We provide the professional driver to take you there. Safe, Verified, Available Anytime.</p>
+                <div>
+                <div>
+                    <ul class="unorder-list">
                     <li><i class="fa-solid fa-check-circle" style="color: #FFC107; margin-right: 5px;"></i> Use your own car or bike</li>
                     <li><i class="fa-solid fa-check-circle" style="color: #FFC107; margin-right: 5px;"></i> Pay only for driver</li>
                     <li><i class="fa-solid fa-check-circle" style="color: #FFC107; margin-right: 5px;"></i> Quick on Whatsapp Bookings</li>
-                </ul>
+                    </ul>
+                </div>
                 <div class="btn-container">
-                    <button class="btn whatsapp-btn-css"><i class="fab fa-whatsapp whatsapp-style"></i>Book on whatsapp</button>
+                    <button class="btn whatsapp-btn-css"><i class="fab fa-whatsapp whatsapp-style"></i>Book on whatsApp</button>
                     <button class="btn caller-btn-css"><i class="fa fa-phone whatsapp-style"></i>Call Now</button>
                 </div>
             </div>
@@ -53,7 +69,7 @@
 
     <!-- how-its-works -->
     <section>
-        <div class="how-its-works">
+        <div class="container how-its-works">
             <h1>How It <span style="color: #FFC107">Works</span></h1>
             <p class="sub-text">Get a professional Driver at your Doorstep in just three simple steps</p>
             <div class="works-example-container">
@@ -78,7 +94,7 @@
 
      <!-- About / What We Do -->
     <section>
-        <div class="about-container">
+        <div class="container about-container">
             <div class="about-img">
                 <img src="./Assets/DriverEase1.jpeg" alt="Relaxing in car while driver drives">
             </div>
@@ -123,15 +139,17 @@
     </section>
 
     <!-- pricing section -->
-    <section>
-        <div class="pricing-container">
+    <section style="background-color: #0a0a0a;">
+        <div class="container pricing-container">
             <div class="price-heading">
                 <h2>Simple<span style="color:#FFC107;"> Pricing</span></h2>
                 <p class="sub-text">Transparent rates with no hidden changes or surprises</p>
             </div>
             <div class="price-content">
                 <div class="price-step-card">
-                    <div class="new-user-div">NEW USER OFFER</div>
+                    <div class="new-user-div-parent">
+                        <div class="new-user-div">NEW USER OFFER</div>
+                    </div>
                     <h2>First Ride for Bike</h2>
                     <div class="price-99-div"><span>&#8377;99</span> /only for New User</div>
                     <div>
@@ -149,7 +167,9 @@
                     </div>
                 </div>
                 <div class="price-step-card">
-                    <div class="new-user-div">NEW USER OFFER</div>
+                    <div class="new-user-div-parent">
+                        <div class="new-user-div">NEW USER OFFER</div>
+                    </div>
                     <h2>First Ride for Car</h2>
                     <div class="price-99-div"><span>&#8377;199</span> /only for New User</div>
                     <div>
@@ -172,7 +192,7 @@
 
     <!-- trust section -->
     <section class="trust-section">
-        <div class="trust-container">
+        <div class="container trust-container">
             <div class="trust-heading">
                 <h1>Turst & <span style="color:#FFC107;">Safety</span></h1>
                 <p class="sub-text">Your vehicle and family are in safe, experienced hands</p>
@@ -205,7 +225,7 @@
 
     <!-- usefull for -->
     <section style="padding: 1px;">
-        <div class="usecase-container">
+        <div class="container usecase-container">
             <div class="usecase-heading">
                 <h2>Perfect for <span style="color: #FFC107;">Every Occasion</span></h2>
                 <p class="sub-text">Whenever you need a driver, we ready</p>
@@ -252,7 +272,7 @@
 
     <!-- final call to action -->
     <section class="cta-section">
-        <div class="final-cta-container">
+        <div class="container final-cta-container">
             <div class="cta-heading">Need a Driver Right Now?</div>
             <div class="sub-text" style="font-size: 20px;">Book instantly on WhatsApp and get a professional driver Assigned in minutes.</div>
             <div>
@@ -263,18 +283,31 @@
 
     <!-- footer section -->
     <section>
-        <div>
-            <div class="footer-heading">
-                <a>DriveEase <span style="color: #FFC107;">Drivers</span></a>
-                <p class="sub-text">Your trusted partner for professional drivers. Safe, verified, and reliable service at your fingertips.</p>
+        <div class="container">
+            <div class="footer-first-div">
+                <div class="footer-heading">
+                    <a>DriveEase <span style="color: #FFC107;">Drivers</span></a>
+                    <p class="sub-text">Your trusted partner for professional drivers. Safe, verified, and reliable service at your fingertips.</p>
+                </div>
+                <div class="footer-contacts">
+                <ul style="list-style-type: none; line-height: 30px; alignment-baseline: central;">
+                    <li><a href="tel:+917306715959"><i class="fa-solid fa-phone"></i>+91 73067 15959</i></a></li>
+                    <li><a href="https://www.instagram.com/driveeasedrivers?utm_source=qr&igsh=dHg1YW56ZDlpcGJy" target="_black"><i class="fab fa-instagram"></i>Instagram</i></a></li>
+                    <li><a href="https://www.facebook.com/share/18emhu2Dj6/" target="_blank"><i class="fab fa-facebook"></i>Facebook</i></a></li>
+                    <li><a href="mailto:driveeasedrivers@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>Email</i></a></li>
+                    <li><p><i class="fa-solid fa-location-dot"></i> Salem, Tamilnadu, India</i></p></li>
+                </ul>
             </div>
-            <div class="footer-contacts">
-                <a href="tel:+917306715959"><i class="fa-solid fa-phone"></i>+91 73067 15959</i></a>
-                <a><i class="fab fa-instagram"></i>Instagram</i></a>
-                <a><i class="fab fa-facebook"></i>Facebook</i></a>
-                <p><i class="fa-solid fa-location-dot"></i> Salem, Tamilnadu, India</i></p>
+            </div>
+            <div class="footer-rights-section">
+               <div class="footer-rights">© 2026 DriveEase Drivers. All rights reserved.</div>
+               <div class="footer-terms-condition">
+                    <a>Terms & Conditions</a>
+                    <a>Privacy Policy</a>
+               </div> 
             </div>
         </div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 </html>
