@@ -14,5 +14,26 @@ menuBtn.addEventListener("click", () => {
     }
 })
 
-// click xmark to close tab
-menuBtn.addEventListener()
+// click nav link then close xmark and its tab
+document.querySelectorAll(".nav-items").forEach((link) => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        let icon = menuBtn.querySelector("i");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    })
+})
+
+//whatsApp integration
+const whatsAppNumber = "916381151106";
+const whatsAppBtns = document.querySelectorAll(".whatsApp-btn-js")
+
+whatsAppBtns.forEach( btn => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault(); //used to cancel a browser's default action associated with an event
+        const msg = btn.getAttribute('data-message');
+        const encodedMessage = encodeURIComponent(msg);
+        const whatsAppUrl = `https://wa.me/${whatsAppNumber}?text=${encodedMessage}`;
+        window.open(whatsAppUrl, '_blank');
+    })
+})
