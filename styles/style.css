@@ -38,7 +38,7 @@ a {
 
 .nav-bar-container {
     display: flex;
-    background-color: var(--primary-yellow);
+    background-color: var(--bg-color);
     height: 55px;
     position: fixed;
     left: 0px;
@@ -47,14 +47,33 @@ a {
     align-items: center;
     justify-content: space-between;
     z-index: 99;
+    border-bottom: 0.5px solid var(--primary-yellow-hover);
 }
 
-.logo {
+.nav-title {
+    margin-left: 0.5rem;
+    display: flex;
+    height: 100%;
+    width: 150px;
+    /* align-items: center; */
+}
+
+.D-logo {
+    padding: 5px 0px;
+    width: 30%;
+}
+
+.DriveEase-name {
+    padding: 10px 5px;
+    width: 100%;
+}
+
+/* .logo {
     font-size: 25px;
     color: var(--text-main);
     font-weight: bold;
     padding-left: 1rem;
-}
+} */
 
 .mobile-menu-button {
     padding: 10px;
@@ -120,7 +139,8 @@ a {
 /* hero section - image*/
 
 .hero-section {
-    margin-top: 80px;
+    margin-top: 3rem;
+    padding-top: 1rem;
     background-color: var(--bg-color);
 }
 
@@ -135,7 +155,7 @@ a {
     align-items: center;
     border-radius: inherit;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
 }
 
@@ -674,19 +694,17 @@ a {
 
 /* responsive design */
 
-/* @media(min-width: 319px) {
-    
-} */
+@media(min-width: 319px) {
+    .hero-section {
+        padding-top: 3rem;
+    }
+}
 
 /* mobile large */
 @media(min-width: 400px) {
     .price-list li {
         font-size: 1rem;
     }
-
-    /* .footer-contacts a, p {
-        font-size: 1.1rem;
-    } */
 }
 
 /* for tablet */
