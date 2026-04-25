@@ -25,7 +25,7 @@ document.querySelectorAll(".nav-items").forEach((link) => {
 })
 
 //whatsApp integration
-const whatsAppNumber = "916381151106";
+const whatsAppNumber = "917306715959";
 const whatsAppBtns = document.querySelectorAll(".whatsApp-btn-js")
 
 whatsAppBtns.forEach( btn => {

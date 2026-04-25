@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveEase</title>
+    <title>DriveEase Drivers | Hire a Driver for your own Vehicle</title>
+    <link rel="icon" href="Assets/DLogo.ico">
     <!-- font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +12,12 @@
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 <body>
     <!-- nav bar -->
-    <nav>
+    
+    <nav id="navbar">
         <div class="nav-bar-container">
             <div class="nav-title">
                 <img class="D-logo" src="Assets/DLogo.png">
@@ -64,7 +67,7 @@
                     <a class="btn whatsapp-btn-css whatsApp-btn-js" data-message="Hi, I need a driver. Pickup location: Date & time: Vehicle type:">
                         <i class="fab fa-whatsapp whatsapp-style"></i>Book on whatsApp
                     </a>
-                    <button class="btn caller-btn-css"><i class="fa fa-phone whatsapp-style"></i>Call Now</button>
+                    <a href="tel:+917306715959" class="btn caller-btn-css"><i class="fa fa-phone whatsapp-style"></i>Call Now</a>
                 </div>
             </div>
         </div>
@@ -317,6 +320,11 @@
             </div>
         </div>
     </section>
+
+    <!-- floating whatsApp -->
+    <a class="floating-whatapp whatsapp-btn-css whatsApp-btn-js" data-message="Hi, I need a driver. Pickup location: Date & time: Vehicle type:">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <script src="script/script.js"></script>
 </body>
 </html>

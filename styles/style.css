@@ -9,6 +9,10 @@
     --text-muted: #a0a0a0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +121,7 @@ a {
 }
 
 .nav-items:hover {
-    color: var(--text-muted);
+    color: var(--primary-yellow-hover);
     transform: translateY(-1px);
     transition: 0.3s ease;
     cursor: pointer;
@@ -134,6 +138,7 @@ a {
 .nav-wh-btn:hover {
     transform: scale(1.02);
     background-color: var(--whatsapp-green-hover);
+    cursor: pointer;
 }
 
 /* hero section - image*/
@@ -243,6 +248,7 @@ a {
 .whatsapp-btn-css:hover {
     transform: scale(1.02);
     background-color: var(--whatsapp-green-hover);
+    cursor: pointer;
 }
 
 .whatsapp-btn-css:active {
@@ -690,6 +696,27 @@ a {
 
 .footer-terms-condition a {
     padding-right: 1rem;
+}
+
+.floating-whatapp {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    box-shadow: 0px 0px 5px 0.5px rgba(37, 211, 102, 0.8);
+}
+
+.floating-whatapp i {
+    font-size: 26px;
+    /* padding-top: 4px;
+    padding-left: 2px; */
 }
 
 /* responsive design */
